@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './forms.scss'
 })
 export class Forms {
-
+  results: string[] = [];
 }
