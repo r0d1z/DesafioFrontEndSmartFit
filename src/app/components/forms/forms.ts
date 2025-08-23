@@ -11,8 +11,7 @@ export class Forms implements OnInit {
   results: string[] = [];
   formGroup!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) {
-  }
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
     this.formGroup = this.formBuilder.group({
@@ -25,7 +24,7 @@ export class Forms implements OnInit {
     console.log("submit");
     console.log(this.formGroup.value);
   }
-  onClear(): void {
+  onClean(): void {
     console.log("clear");
     this.formGroup.reset();
   }
